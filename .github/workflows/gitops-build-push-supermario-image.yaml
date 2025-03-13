@@ -23,5 +23,5 @@ jobs:
  
       - name: Build and Push Docker Image
         run: |
-          docker build -t docker.io/sylvesterkachi/supermariogitopsproject: ${{ env.VERSION }} .
+          docker build -t docker.io/sylvesterkachi/supermariogitopsproject:${{ env.VERSION }} .
           docker push docker.io/sylvesterkachi/supermariogitopsproject: ${{ env.VERSION }}

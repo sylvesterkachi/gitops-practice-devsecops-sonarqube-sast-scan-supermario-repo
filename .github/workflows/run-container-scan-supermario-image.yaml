@@ -29,6 +29,7 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           #input: /github/workspace/supermariolatestdockerimage.tar
-          input: /github.host-workspace/supermariolatestdockerimage.tar
+          path: ${{ github.workspace }}
+          name: supermariolatestdockerimage.tar
           exit-code: '0'
           severity: 'CRITICAL,HIGH'

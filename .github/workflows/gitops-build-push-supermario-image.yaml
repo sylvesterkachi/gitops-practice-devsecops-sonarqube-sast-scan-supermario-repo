@@ -6,9 +6,9 @@ on:
       - main
 
 env:
-  VERSION: $(($(version.txt)+1))
+  VERSION: $(( $(version.txt) + 1 ))
 
-  
+
 jobs:
   
   build_push_supermario_docker_image:
